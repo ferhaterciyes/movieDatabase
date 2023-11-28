@@ -28,7 +28,7 @@ const MainPage = () => {
   }, []);
   return (
     <div>
-      <SearchForm />
+    
       <Hero />
 
       {state.isGenresLoading ? (

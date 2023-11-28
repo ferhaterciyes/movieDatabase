@@ -8,7 +8,7 @@ const SearchForm = () => {
       const text = e.target[0].value;
     e.preventDefault();
     navigate(`/results?search_query=${text}`);
-  
+      
   };
 
   return (
