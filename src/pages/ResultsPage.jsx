@@ -17,7 +17,7 @@ const SearchMovie = () => {
         options,
       )
       .then((res) => setResults(res.data.results))
-      .catch((error) => console.error("Error fetching search results:", error));
+      .catch((error) => alert("Error fetching search results:", error));
   }, [query]);
 
   return (

@@ -19,18 +19,9 @@ const MovieList = ({ genre }) => {
   }, []);
 
   const splideOptions = {
-    fixedWidth: 250,
-    fixedHeight: 350,
-    isNavigation: true,
-    gap: 10,
-    pagination: false,
-    focus: 'center',
-    breakpoints: {
-      600: {
-        fixedWidth: 150,
-        fixedHeight: 200,
-      },
-    },
+        autoWidth:true,
+        gap:"10px",
+        pagination:false
   };
 
   return (
@@ -43,7 +34,7 @@ const MovieList = ({ genre }) => {
               <Link 
               to={`/detail/${movie.id}`}>
                 <img
-                  className="w-full h-full object-cover rounded-lg shadow-lg"
+                  className=" h-full object-cover rounded-lg shadow-lg w-[300px]"
                   src={baseImageURL.concat(movie.backdrop_path)}
                   alt=""
                 />
